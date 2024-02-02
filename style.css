@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+ 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.smallslices{
+    @apply text-sm bg-gray-200 border border-gray-300 rounded-full px-2 py-1 cursor-pointer hover:bg-amber-400 hover:text-white;
+}
+
+.bynfocus{
+    @apply focus:outline-offset-1 focus:outline-blue-500 focus:border-none;
+}
+
+.footerIcon{
+    @apply flex flex-col items-center cursor-pointer hover:text-red-600 lg:hover:bg-slate-100 lg:w-full;
+}
+@tailwind utilities;

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>MyYoutube</title>
+</head>
+<body class="bg-gray-100 m-0 p-0 box-border min-h-screen">
+    <!-- Main Container -->
+    <div class="lg:ml-20">
+        <!-- Header -->
+        <header class="bg-white w-full sticky top-0">
+            <div class="flex justify-between items-center h-14 mx-2 ">
+                <div>
+                   <a href="#"><img src="/assets/yt.jpg" alt="youtube" class="w-[117px] h-[37px]"></a>
+                </div>
+                <div class="hidden md:flex md:items-center md:justify-center md:flex-grow">  
+                    <input type="text" placeholder="Search" class="border border-gray-400 h-8 px-3 py-2
+                     w-3/5 rounded-l-2xl focus:outline-offset-1 focus:outline-blue-500 focus:border-none;">
+                    <button class="flex items-center justify-center h-8 w-16 text-white bg-purple-700 hover:bg-purple-800 font-medium border border-l-0 text-sm dark:bg-purple-500 dark:hover:bg-purple-700 dark:focus:ring-purple-900">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+                <div class="flex justify-center items-center md:space-x-5">
+                    <button class="border-none bg-white hover:scale-105 transition ease-out duration-300">
+                        <i class="material-icons hover:text-red-500" style="font-size: 28px;">video_call</i>
+                    </button>
+                    <button  class="border-none bg-white hover:scale-105 transition ease-out duration-300">
+                        <i class="material-icons hover:text-red-500">apps</i>
+                    </button>
+                    <button  class="border-none bg-white hover:scale-105 transition ease-out duration-300">
+                        <i class="material-icons hover:text-red-500">notifications</i>
+                    </button>
+                    <button class="bg-white border-none md:hidden hover:scale-105 transition ease-out duration-300">
+                        <i class="material-icons hover:text-red-500">search</i>
+                    </button>
+                    <button class="border-none bg-white hover:scale-105 transition ease-out duration-300">
+                            <i class="material-icons hover:text-red-500">account_circle</i>
+                    </button>
+                </div>
+            </div>
+            <!-- Below header small content -->
+            <div class="flex">
+                <div class="flex items-center py-3 px-2 space-x-3 mt-[-9px] ">
+                    <span class="text-sm bg-gray-700 border border-gray-800 rounded-full px-2 py-1 text-white cursor-pointer">All Recomndations</span>
+                    <span class="smallslices">Comedy</span>
+                    <span class="smallslices">Mixes </span>
+                    <!-- <span class="smallslices">Music</span> -->
+                </div>
+                <div class="hidden sm:flex items-center py-3 px-2 space-x-3 mt-[-9px]">
+                    <span class="smallslices">News</span>
+                    <span class="smallslices">Tests</span>
+                    <span class="smallslices">Thoughts</span>
+                    <span class="smallslices">Vocabulary</span>         
+                </div>
+                <div class="hidden md:flex items-center py-3 px-2 space-x-3 mt-[-9px]">
+                    <span class="smallslices">Posts</span>
+                    <span class="smallslices">Array</span>
+                </div>
+                <div class="hidden lg:flex items-center py-3 px-2 space-x-3 mt-[-9px]">
+                    <span class="smallslices">Recent</span>
+                    <span class="smallslices">Tests</span>
+                    <span class="smallslices">Crick</span>
+                </div>
+                <div class="hidden xl:flex items-center py-3 px-2 space-x-3 mt-[-9px]">
+                    <span class="smallslices">Sales</span>
+                    <span class="smallslices">Crick</span>
+                    <span class="smallslices">Fun</span>
+                    <span class="smallslices">Cats</span>
+                    <!-- <span class="smallslices">Logs</span>
+                    <span class="smallslices">Chess</span>
+                    <span class="smallslices">Yours</span> -->
+                </div>
+                <div class="hidden 2xl:flex items-center py-3 px-2 space-x-3 mt-[-9px]">
+                    <span class="smallslices">Recent</span>
+                    <span class="smallslices">Tests</span>
+                    <span class="smallslices">Live</span>
+                    <span class="smallslices">Live</span>
+                    <span class="smallslices">Recent</span>
+                    <span class="smallslices">Tests</span>
+                </div>
+                
+            </div>
+        </header>
+        <!-- youtube clips or cards means video clips -->
+        <div class="overflow-scroll">
+            <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-2 md:gap-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIIGUoDWX77ujs_-GywxLK9iPvu39ppU24Q&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_bMKkCAfnctZ44MV4HXjc5cpYwNd63OECBQ&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV9Hl8VdeLfaOy2rEBkbaou_WgfbdD_8kROQ&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJINpm3-Lc01iAa2sUgQbZYGnzxZ-Zer670phGGt5E2yGQ-Xu_y4IFXuKn4lhySWkJGOk&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTISsq340XGeSxue3fPtkIVj5eWH8g_ADZJHA&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHrxT6W3fKF4rSkjlsUV9C6OAleDIdkeVr-w&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREnqGGoWWonhmjkET63gTLnNoWIVoB03U_Aw&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzav1KJLFT9qf5S-orEzfl0wbfBfmo58WxFQ&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB9VVgVQhCfCnD7udlz3tJnAR61x76JZ3Ftw&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7z4Y8Pa7HAcpJPMiU8u4k7LuVC1bs0dT7HQ&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7HPZ2a9EiMvZLKeftJVbegoWLyLZLueclTA&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0tnsg2zHELpATjp1mAr9QZAh5A0nh2u5YQ&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1nyY6kKGlNVTkGNpCklQynZrXhymb_tDRIA&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxQe5cIb1xmRGQl-lHZyre-d7yizbrdkdIj9wdxUW5vir61mLUEykU8BPwa9jVIhJTpVg&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx9fxogSfiAR-IA0kPRCF5rFOI2ONRIGZmyw&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKjUx01DxwNMaTiFWA36dziXA6lypj_509A&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiIvjLVB38Hrh0PIekTE03LCquVAIHhbjJ6A&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpwXXO-V3KfOyFAaK1w23Z9lASQb5T1n6hw&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="bg-origin-border mt-2 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0O-ccqqfzLyyxh1HTT_D-uLaLggqHDPzcQ&usqp=CAU" alt="card1" class="w-full h-[178px] rounded-lg hover:transition ease-out duration-500 hover:rounded-none">
+                    <div class="flex justify-between xl:justify-start">
+                        <div class="h-8 w-10 rounded-full p-3 m-1 bg-cover" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2fpfU6bq0FUQVmI9aQy1XXiRa04c_aMKfDFOB2TKfkhBboLdz6WUILjx34VY3SL8vgQ&usqp=CAU);"></div>
+                        <span class="p-1">
+                            <span >It's all ipsum dolor sit amet consectetur adipisicing elit. Non, dignissimos!</span>
+                            <p class="m-0 text-[12px]">Some Tv | 5.7k views | 1 hour ago</p>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="sticky bottom-0 w-full bg-white lg:fixed lg:top-0 lg:w-[80px] lg:min-h-screen">
+        <div class="p-1">
+            <div class="flex justify-around items-center lg:flex-col lg:gap-6">
+                <div class="hidden lg:block lg:footerIcon mt-[10px]">
+                    <a href="#" class="text-black"><i class="material-icons">format_list_bulleted</i></a>
+                </div>
+                <div class="footerIcon">
+                    <i class="material-icons">home</i>
+                    <span class="text-[11px]">Home</span>
+                </div>
+                <div class="footerIcon">
+                    <i class="material-icons">play_arrow</i>
+                    <span class="text-[11px]">Shorts</span>
+                </div>
+                <div>
+                    <i class="material-icons cursor-pointer hover:text-red-600" style="font-size: 38px;">control_point</i>
+                </div>
+                <div class="footerIcon">
+                    <i class="material-icons">subscriptions</i>
+                    <span class="text-[11px]">Subscriptions</span>
+                </div>
+                <div class="footerIcon">
+                    <i class="material-icons">person_outline</i>
+                    <span class="text-[11px]">You</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
